@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>2.Electronic File Installation &#8212; Assignment1 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. Site Specific Sequence" href="Site%20Specific%20Sequence.html" />
+    <link rel="prev" title="1. Functional Magnetic Resonance Imaging" href="Functional%20Magnetic%20Resonance%20Imaging.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="electronic-file-installation">
+<h1>2.Electronic File Installation<a class="headerlink" href="#electronic-file-installation" title="Permalink to this headline">¶</a></h1>
+<section id="overview">
+<h2>2.1 Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Electronic files are being distributed in order to standardize MRI acquisitions
+across the range of MR imaging platforms being used in the PPMI study. This
+was previously being done just for sites participating in the DTI and resting
+state substudies, but will now take place for all sites.
+The electronic files are being supplied by the Alzheimer’s Disease
+Neuroimaging Initiative (ADNI) study. The support of this study and in
+particular Clifford Jack, Michael Weiner and Bret Borowski is gratefully
+acknowledged.
+The only sequences being used from the ADNI files will be the T1 and T2/FLAIR
+sequences. As noted below the files may contain several other sequences since
+the protocols were originally built for ADNI. However, these additional
+sequences <code class="docutils literal notranslate"><span class="pre">SHOULD</span> <span class="pre">NOT</span> <span class="pre">BE</span> <span class="pre">USED</span></code> when scanning PPMI subjects. Performing
+additional scans, beyond the ones approved for each site will unnecessarily
+prolong the subject’s time in the scanner and the additional data will not be
+accepted by PPMI.</p>
+</section>
+<section id="installation-for-ge-scanners">
+<h2>2.2 Installation for GE scanners<a class="headerlink" href="#installation-for-ge-scanners" title="Permalink to this headline">¶</a></h2>
+<section id="software-versions-14-and-15-or-lower">
+<h3>2.2.1 Software versions 14 and 15 (or lower)<a class="headerlink" href="#software-versions-14-and-15-or-lower" title="Permalink to this headline">¶</a></h3>
+<p>Do the following steps:
+1) Contact your GE MR Field Service Engineer or Internal Service Engineer or
+physicist and have him/her execute the following steps.
+2) Insert the CD into the CD drive of the scanner host computer.
+3) Open up C shell from tools desktop.
+4) <em>Login in as root (su) with correct password.</em>
+5) Type the following commands carefully in a C-shell (on tools desktop).
+6) After installation, keep the instructions and disk in case you need to re-load
+software.
+7) If you upgrade to new revision of software, you will be given a new disk if
+necessary.</p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">/tmp/cdrom</span></code>     creates temporary mount directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">mount</span> <span class="pre">–t</span> <span class="pre">iso9660</span> <span class="pre">/dev/cdrom</span> <span class="pre">/tmp/cdrom</span></code>       links CD to this mount directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/tmp/cdrom</span></code>       changes to CD mount directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">ADNI*</span> <span class="pre">/usr/g/protocols/site/head</span></code>      copies protocols to scanner</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/usr/g/protocols/site/head</span></code>         changes to protocol directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">umount</span> <span class="pre">/dev/cdrom</span></code>            disconnects CD from file system</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/usr/g/protocols/site/head</span></code>        changes to protocol directory</p>
+</section>
+<section id="copy-and-install-the-protocols">
+<h3>2.2.2 Copy and install the protocols<a class="headerlink" href="#copy-and-install-the-protocols" title="Permalink to this headline">¶</a></h3>
+<p>1. With the USB drive in the computer, select the ProtocolExchange feature
+(see Figure 1, blue arrow.)</p>
+<a class="reference internal image-reference" href="_images/image1.jpg"><img alt="_images/image1.jpg" src="_images/image1.jpg" style="width: 400.0px; height: 400.0px;" /></a>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Assignment1</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Functional%20Magnetic%20Resonance%20Imaging.html">1. Functional Magnetic Resonance Imaging</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2.Electronic File Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">2.1 Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-for-ge-scanners">2.2 Installation for GE scanners</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Site%20Specific%20Sequence.html">3. Site Specific Sequence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DTI%20MRI%20Imaging.html">Functional Magnetic Resonance Imaging</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Functional%20Magnetic%20Resonance%20Imaging.html" title="previous chapter">1. Functional Magnetic Resonance Imaging</a></li>
+      <li>Next: <a href="Site%20Specific%20Sequence.html" title="next chapter">3. Site Specific Sequence</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Amit.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/Electronic File Installation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

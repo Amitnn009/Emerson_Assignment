@@ -9,10 +9,10 @@ Welcome to Assignment1's documentation!
 .. toctree::
    :maxdepth: 2
 
-   Home
-   Overview
-   Waterfall Model
-   Iterative Model
-   Spiral Model
-   Hello
+   Functional Magnetic Resonance Imaging
+   Electronic File Installation
+   Site Specific Sequence
+   DTI MRI Imaging
+	 
+   
 

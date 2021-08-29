@@ -1,6 +1,0 @@
-Functional Magnetic Resonance Imaging
-======================================
-
-	 
-   
-

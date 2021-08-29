@@ -9,11 +9,10 @@ Welcome to Assignment1's documentation!
 .. toctree::
    :maxdepth: 2
 
-   
-     Functional Magnetic Resonance Imaging
-	 Electronic File Installation
-	 Site Specific Sequence
-	 DTI MRI Imaging
+   Functional Magnetic Resonance Imaging
+   Electronic File Installation
+   Site Specific Sequence
+   DTI MRI Imaging
 	 
    
 

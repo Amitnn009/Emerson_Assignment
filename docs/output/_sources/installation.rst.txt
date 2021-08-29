@@ -1,0 +1,4 @@
+Installation page
+=================
+
+Steps to install Phinx

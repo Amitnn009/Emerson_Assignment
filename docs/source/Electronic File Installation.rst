@@ -56,7 +56,7 @@ necessary.
 .. image:: /images/image1.jpg
    :height: 400
    :width: 400
-   :Scale: 100
+   :Scale: 150
 
 
 
